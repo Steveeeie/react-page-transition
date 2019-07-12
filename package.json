@@ -1,6 +1,6 @@
 {
   "name": "@steveeeie/react-page-transition",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React component that makes it easy to implement the page transitions from the Codedrops page transitions demo",
   "main": "dist/index.js",
   "license": "MIT",
@@ -50,6 +50,7 @@
     "transpile": "babel src -d dist --copy-files",
     "prepublishOnly": "yarn transpile",
     "deploy": "gh-pages -d demo/dist",
-    "predeploy": "yarn build && cp demo/dist/index.html demo/dist/404.html"
+    "predeploy": "yarn build && cp demo/dist/index.html demo/dist/404.html",
+    "publish": "npm publish --access public"
   }
 }
