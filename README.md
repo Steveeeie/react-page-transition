@@ -17,17 +17,17 @@
 
 ## Installation
 
-```yarn add @steveeeie/react-page-transition```
+`yarn add @steveeeie/react-page-transition`
 
 or
 
-```npm install @steveeeie/react-page-transition```
+`npm install @steveeeie/react-page-transition`
 
 ## Usage Example ( With React Router )
 
-Wrap your routes inside the ```PageTransition``` component and pass one of the preset names to the `preset` prop, ([view the demo](https://stevemeredith.com/react-page-transition) for the full list of presets). 
+Wrap your routes inside the `PageTransition` component and pass one of the preset names to the `preset` prop, ([view the demo](https://stevemeredith.com/react-page-transition) for the full list of presets).
 
-You will also need to pass the current ```location.path``` to the ```transitionKey``` prop, this is so that the internal ```TransitionGroup``` can track which components are entering and exiting.
+You will also need to pass the current `location.path` to the `transitionKey` prop, this is so that the internal `TransitionGroup` can track which components are entering and exiting.
 
 ```jsx
 import React from 'react';
@@ -62,4 +62,4 @@ function Routes() {
 
 `exitAnimation` - Accepts one of the available animation names as a string and overides the exit animation, ([view the demo](https://stevemeredith.com/react-page-transition) for the full list of animations).
 
-transitionKey - Needs to be a unique identifier, it is used by the internal ```TransitionGroup```to track which components are entering and exiting.
+transitionKey - Needs to be a unique identifier, it is used by the internal `TransitionGroup` to track which components are entering and exiting.
