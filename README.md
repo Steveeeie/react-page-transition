@@ -41,7 +41,7 @@ function Routes() {
         render={({ location }) => (
             <PageTransition
               preset="moveToLeftFromRight"
-              transitionKey={location.pathname}
+              transitionKey={location.pathname}>
               <Switch location={location}>
                 <Route to="/home" component={Home} />
                 <Route to="/about" component={About} />
