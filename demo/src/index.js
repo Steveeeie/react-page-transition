@@ -48,7 +48,8 @@ function App() {
   const handleExitAnimationChange = event => setExitAnimation(event.target.value);
 
   return (
-    <Router>
+    <Router basename="/react-page-transition">
+      <Route exact path="/" render={() => <Redirect to="/page-1" />} />
       <Route
         render={({ location }) => (
           <>

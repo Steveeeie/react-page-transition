@@ -12,7 +12,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'demo/dist'),
     filename: 'bundle.js',
-    publicPath: '/'
+    publicPath: '/react-page-transition/'
   },
   module: {
     rules: [
