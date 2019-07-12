@@ -6,7 +6,7 @@
 
 ## Description
 
-⚛️💨 A React component that makes it easy to use the page transitions from the [Codedrops Page Transitions Demo](https://tympanus.net/Development/PageTransitions/)
+⚛️💨 A React component that makes it easy to use the page transitions from the [Codedrops Page Transitions Demo](https://tympanus.net/Development/PageTransitions/) with React.
 
 <br/>
 
