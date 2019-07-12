@@ -62,4 +62,4 @@ function Routes() {
 
 `exitAnimation` - Accepts one of the available animation names as a string and overides the exit animation, ([view the demo](https://stevemeredith.com/react-page-transition) for the full list of animations).
 
-transitionKey - Needs to be a unique identifier, it is used by the internal `TransitionGroup` to track which components are entering and exiting.
+`transitionKey` - Needs to be a unique identifier, it is used by the internal `TransitionGroup` to track which components are entering and exiting.
