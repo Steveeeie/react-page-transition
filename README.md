@@ -49,7 +49,7 @@ function Routes() {
             </PageTransition>
         )}
       />
-    </Router>
+    </BrowserRouter>
   );
 }
 ```
