@@ -29,6 +29,25 @@ module.exports = {
   },
   devServer: {
     port: 3000,
-    historyApiFallback: true
+    historyApiFallback: true,
+    overlay: {
+      errors: true,
+      warnings: true
+    },
+    stats: {
+      entrypoints: false,
+      colors: true,
+      hash: false,
+      version: false,
+      timings: false,
+      assets: false,
+      chunks: false,
+      modules: false,
+      reasons: false,
+      children: false,
+      source: false,
+      errorDetails: false,
+      publicPath: false
+    }
   }
 };

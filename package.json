@@ -2,7 +2,11 @@
   "name": "@steveeeie/react-page-transition",
   "version": "1.0.1",
   "description": "A React component that makes it easy to implement the page transitions from the Codedrops page transitions demo",
-  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -28,7 +32,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.4",
+    "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.6",
@@ -39,18 +43,27 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-transition-group": "^4.2.1",
+    "rollup": "^1.28.0",
+    "rollup-plugin-auto-external": "^2.0.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-babel-minify": "^9.1.1",
+    "rollup-plugin-filesize": "^6.2.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-progress": "^1.1.1",
     "styled-components": "^4.3.2",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
   },
   "scripts": {
-    "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
-    "transpile": "babel src -d dist --copy-files",
-    "prepublishOnly": "yarn transpile",
-    "deploy": "gh-pages -d demo/dist",
-    "predeploy": "yarn build && cp demo/dist/index.html demo/dist/404.html",
-    "publish": "npm publish --access public"
+    "demo:start": "webpack-dev-server --mode development",
+    "demo:build": "webpack --mode production",
+    "demo:deploy": "npm run demo:build && gh-pages -d public",
+    "lib:build": "rollup --config"
+  },
+  "hooks": {
+    "before:init": [
+      "npm run lib:build"
+    ]
   }
 }
