@@ -7,7 +7,7 @@ import minify from 'rollup-plugin-babel-minify';
 
 function config(format) {
   return {
-    input: './src/index.js',
+    input: './src/lib/index.js',
     output: {
       format,
       file: `./dist/index.${format}.js`,

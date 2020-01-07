@@ -35,10 +35,17 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.5.4",
     "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "babel-plugin-styled-components": "^1.10.6",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
     "gh-pages": "^2.0.1",
     "html-webpack-plugin": "^3.2.0",
+    "prettier": "^1.19.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
@@ -58,8 +65,9 @@
   "scripts": {
     "demo:start": "webpack-dev-server --mode development",
     "demo:build": "webpack --mode production",
-    "demo:deploy": "npm run demo:build && gh-pages -d public",
-    "lib:build": "rollup --config"
+    "demo:deploy": "npm run demo:build && gh-pages -d build",
+    "lib:build": "rollup --config",
+    "lint": "eslint src"
   },
   "hooks": {
     "before:init": [

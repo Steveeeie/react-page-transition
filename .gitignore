@@ -1,4 +1,4 @@
 /dist
-/demo/dist
+/build
 /node_modules
 .DS_STORE

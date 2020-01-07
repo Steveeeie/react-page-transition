@@ -1,6 +1,14 @@
 import styled, { css } from 'styled-components';
 
-const createAnimationStyles = ({ keyframes, delay, duration, timing, fill, origin, onTop }) => css`
+const createAnimationStyles = ({
+  keyframes,
+  delay,
+  duration,
+  timing,
+  fill,
+  origin,
+  onTop
+}) => css`
   animation-name: ${keyframes};
   animation-delay: ${delay};
   animation-duration: ${duration}ms;

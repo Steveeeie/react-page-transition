@@ -1,9 +1,15 @@
-import React, { useState, Fragment } from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route, Link, Redirect } from 'react-router-dom';
-import PageTransition from '../../src';
-import animations from '../../src/animations';
-import presets from '../../src/presets';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect
+} from 'react-router-dom';
+import { PageTransition } from '../lib/';
+import animations from '../lib/animations';
+import presets from '../lib/presets';
 import * as Styles from './styles';
 
 const pages = [
@@ -44,8 +50,10 @@ function App() {
   const [enterAnimation, setEnterAnimation] = useState('');
   const [exitAnimation, setExitAnimation] = useState('');
   const handlePresetChange = event => setPreset(event.target.value);
-  const handleEnterAnimationChange = event => setEnterAnimation(event.target.value);
-  const handleExitAnimationChange = event => setExitAnimation(event.target.value);
+  const handleEnterAnimationChange = event =>
+    setEnterAnimation(event.target.value);
+  const handleExitAnimationChange = event =>
+    setExitAnimation(event.target.value);
 
   return (
     <Router basename="/react-page-transition">
@@ -69,11 +77,13 @@ function App() {
               preset={preset}
               transitionKey={location.pathname}
               enterAnimation={enterAnimation}
-              exitAnimation={exitAnimation}>
+              exitAnimation={exitAnimation}
+            >
               <Switch location={location}>
-                {pages.map(page => {
+                {pages.map((page, index) => {
                   return (
                     <Route
+                      key={index}
                       exact
                       path={page.path}
                       render={() => (
@@ -84,12 +94,13 @@ function App() {
                             </Styles.Title>
 
                             <Styles.Description>
-                              A React component that makes it easy to use the page transitions from
-                              the{' '}
+                              A React component that makes it easy to use the
+                              page transitions from the{' '}
                               <a
                                 href="https://tympanus.net/Development/PageTransitions/"
                                 target="_blank"
-                                rel="nofollow">
+                                rel="noopener noreferrer"
+                              >
                                 Codedrops Page Transitions Demo
                               </a>
                             </Styles.Description>
@@ -99,7 +110,8 @@ function App() {
                               <a
                                 href="https://github.com/Steveeeie/react-page-transition"
                                 target="_blank"
-                                rel="nofollow">
+                                rel="noopener noreferrer"
+                              >
                                 Github
                               </a>
                             </Styles.Github>
@@ -107,7 +119,10 @@ function App() {
                             <Styles.Settings>
                               <Styles.Field fullWidth>
                                 <Styles.Label>Preset: </Styles.Label>
-                                <Styles.Select value={preset} onChange={handlePresetChange}>
+                                <Styles.Select
+                                  value={preset}
+                                  onChange={handlePresetChange}
+                                >
                                   {Object.keys(presets).map(key => (
                                     <option key={key} value={key}>
                                       {key}
@@ -120,7 +135,8 @@ function App() {
                                 <Styles.Label>Enter Override: </Styles.Label>
                                 <Styles.Select
                                   value={enterAnimation}
-                                  onChange={handleEnterAnimationChange}>
+                                  onChange={handleEnterAnimationChange}
+                                >
                                   <option value="">None</option>
                                   {Object.keys(animations).map(key => (
                                     <option key={key} value={key}>
@@ -134,7 +150,8 @@ function App() {
                                 <Styles.Label>Exit Override: </Styles.Label>
                                 <Styles.Select
                                   value={exitAnimation}
-                                  onChange={handleExitAnimationChange}>
+                                  onChange={handleExitAnimationChange}
+                                >
                                   <option value="">None</option>
                                   {Object.keys(animations).map(key => (
                                     <option key={key} value={key}>
@@ -150,7 +167,11 @@ function App() {
                     />
                   );
                 })}
-                <Route exact path="/" render={() => <Redirect to="/page-1" />} />
+                <Route
+                  exact
+                  path="/"
+                  render={() => <Redirect to="/page-1" />}
+                />
               </Switch>
             </PageTransition>
           </>
