@@ -1,5 +1,11 @@
 # React Page Transition
 
+---
+
+<img alt="License" src="https://img.shields.io/npm/l/@steveeeie/react-page-transition" /> <img alt="Version" src="https://img.shields.io/npm/v/@steveeeie/react-page-transition"> <img alt="PRs" src="https://img.shields.io/badge/PRs-Welcome-brightgreenn"> ![Twitter Follow](https://img.shields.io/twitter/follow/Steveeeie?style=social)
+
+---
+
 ## Demo
 
 [View Demo](https://stevemeredith.com/react-page-transition)
