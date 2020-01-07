@@ -66,7 +66,8 @@ function PageTransition({
             <Styles.PageTransition
               enterAnimation={enterAnimation}
               exitAnimation={exitAnimation}
-              state={state}>
+              state={state}
+            >
               {children}
             </Styles.PageTransition>
           )}

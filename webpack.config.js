@@ -3,14 +3,14 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
-  template: path.join(__dirname, 'demo/src/index.html'),
+  template: path.join(__dirname, 'src/demo/index.html'),
   filename: './index.html'
 });
 
 module.exports = {
-  entry: path.join(__dirname, 'demo/src/index.js'),
+  entry: path.join(__dirname, 'src/demo/index.js'),
   output: {
-    path: path.join(__dirname, 'demo/dist'),
+    path: path.join(__dirname, 'build'),
     filename: 'bundle.js',
     publicPath: '/react-page-transition/'
   },
@@ -29,6 +29,25 @@ module.exports = {
   },
   devServer: {
     port: 3000,
-    historyApiFallback: true
+    historyApiFallback: true,
+    overlay: {
+      errors: true,
+      warnings: true
+    },
+    stats: {
+      entrypoints: false,
+      colors: true,
+      hash: false,
+      version: false,
+      timings: false,
+      assets: false,
+      chunks: false,
+      modules: false,
+      reasons: false,
+      children: false,
+      source: false,
+      errorDetails: false,
+      publicPath: false
+    }
   }
 };
