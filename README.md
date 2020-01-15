@@ -1,6 +1,7 @@
 # React Page Transition
 
-<img alt="License" src="https://img.shields.io/npm/l/@steveeeie/react-page-transition" /> <img alt="Version" src="https://img.shields.io/npm/v/@steveeeie/react-page-transition"> <img alt="Size" src="https://img.shields.io/bundlephobia/min/@steveeeie/react-page-transition"> <img alt="PRs" src="https://img.shields.io/badge/PRs-Welcome-brightgreenn"> ![Twitter Follow](https://img.shields.io/twitter/follow/Steveeeie?style=social)
+<img alt="License" src="https://img.shields.io/npm/l/@steveeeie/react-page-transition" /> <img alt="Version" src="https://img.shields.io/npm/v/@steveeeie/react-page-transition"> <img alt="Size" src="https://img.shields.io/bundlephobia/min/@steveeeie/react-page-transition"> <img alt="PRs" src="https://img.shields.io/badge/PRs-Welcome-brightgreenn">
+<a href="https://www.twitter.com/steveeeie"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/steveeeie?style=social"></a>
 
 ## Demo
 
