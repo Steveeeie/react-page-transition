@@ -35,21 +35,22 @@ You will also need to pass the current `location.path` to the `transitionKey` pr
 ```jsx
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import PageTransition from '@steveeeie/react-page-transition';
+import { PageTransition } from '@steveeeie/react-page-transition';
 
 function Routes() {
   return (
     <BrowserRouter>
       <Route
         render={({ location }) => (
-            <PageTransition
-              preset="moveToLeftFromRight"
-              transitionKey={location.pathname}>
-              <Switch location={location}>
-                <Route to="/home" component={Home} />
-                <Route to="/about" component={About} />
-              </Switch>
-            </PageTransition>
+          <PageTransition
+            preset="moveToLeftFromRight"
+            transitionKey={location.pathname}
+          >
+            <Switch location={location}>
+              <Route to="/home" component={Home} />
+              <Route to="/about" component={About} />
+            </Switch>
+          </PageTransition>
         )}
       />
     </BrowserRouter>
