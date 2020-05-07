@@ -26,6 +26,16 @@ or
 
 `npm install @steveeeie/react-page-transition`
 
+## Additional Modules
+
+`npm install react-transition-group --save`
+`npm install --save styled-components`
+
+or
+
+`yarn add react-transition-group`
+`yarn add styled-components`
+
 ## Usage Example ( With React Router )
 
 Wrap your routes inside the `PageTransition` component and pass one of the preset names to the `preset` prop, ([view the demo](https://stevemeredith.com/react-page-transition) for the full list of presets).
