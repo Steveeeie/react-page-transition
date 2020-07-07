@@ -1,6 +1,6 @@
 import { keyframes } from 'styled-components';
 
-export default {
+export const animations = {
   moveToLeft: {
     keyframes: keyframes`
       from { }

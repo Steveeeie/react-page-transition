@@ -43,7 +43,7 @@ export const PageTransitionGroup = styled.div`
   overflow: hidden;
 `;
 
-export const PageTransition = styled.div`
+export const PageTransitionWrapper = styled.div`
   backface-visibility: hidden;
   height: 100%;
   left: 0;
