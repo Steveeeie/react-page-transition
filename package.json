@@ -1,6 +1,6 @@
 {
   "name": "@steveeeie/react-page-transition",
-  "version": "1.2.0-2",
+  "version": "1.2.0-3",
   "description": "A React component that makes it easy to implement the page transitions from the Codedrops page transitions demo",
   "files": [
     "dist"
