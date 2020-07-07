@@ -1,8 +1,8 @@
 import React, { memo } from 'react';
 import { Transition, TransitionGroup } from 'react-transition-group';
-import { animations } from './animations';
-import { presets } from './presets';
-import { PageTransitionGroup, PageTransitionWrapper } from './styles';
+import animations from './animations';
+import presets from './presets';
+import * as Styles from './styles';
 
 function PageTransition({
   children,
@@ -59,21 +59,21 @@ function PageTransition({
   const timeout = Math.max(enterAnimation.duration, exitAnimation.duration);
 
   return (
-    <PageTransitionGroup {...rest}>
+    <Styles.PageTransitionGroup {...rest}>
       <TransitionGroup component={null}>
         <Transition key={transitionKey} timeout={timeout}>
           {state => (
-            <PageTransitionWrapper
+            <Styles.PageTransition
               enterAnimation={enterAnimation}
               exitAnimation={exitAnimation}
               state={state}
             >
               {children}
-            </PageTransitionWrapper>
+            </Styles.PageTransition>
           )}
         </Transition>
       </TransitionGroup>
-    </PageTransitionGroup>
+    </Styles.PageTransitionGroup>
   );
 }
 

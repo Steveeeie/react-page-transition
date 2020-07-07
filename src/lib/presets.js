@@ -1,4 +1,4 @@
-export const presets = {
+export default {
   moveToLeftFromRight: {
     exit: {
       name: 'moveToLeft'
