@@ -1,6 +1,6 @@
 {
   "name": "@steveeeie/react-page-transition",
-  "version": "1.1.2",
+  "version": "1.2.0-2",
   "description": "A React component that makes it easy to implement the page transitions from the Codedrops page transitions demo",
   "files": [
     "dist"
@@ -31,41 +31,21 @@
     "styled-components": ">= 4.3.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.5.4",
-    "@babel/preset-react": "^7.0.0",
-    "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.0.6",
-    "babel-plugin-styled-components": "^1.10.6",
     "eslint": "^6.8.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
-    "gh-pages": "^2.0.1",
-    "html-webpack-plugin": "^3.2.0",
     "prettier": "^1.19.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1",
-    "react-transition-group": "^4.2.1",
     "rollup": "^1.28.0",
     "rollup-plugin-auto-external": "^2.0.0",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-babel-minify": "^9.1.1",
     "rollup-plugin-filesize": "^6.2.1",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-progress": "^1.1.1",
-    "styled-components": "^4.3.2",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2"
+    "rollup-plugin-progress": "^1.1.1"
   },
   "scripts": {
-    "demo:start": "webpack-dev-server --mode development",
-    "demo:build": "webpack --mode production",
-    "demo:deploy": "npm run demo:build && gh-pages -d build",
     "lib:build": "rollup --config",
     "lint": "eslint src"
   },
@@ -73,5 +53,8 @@
     "before:init": [
       "npm run lib:build"
     ]
+  },
+  "dependencies": {
+    "react-transition-group": "^4.4.1"
   }
 }
