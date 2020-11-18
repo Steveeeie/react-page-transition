@@ -53,6 +53,7 @@ export const PageTransitionWrapper = styled.div`
   transform-style: preserve-3d;
   transform: translate3d(0, 0, 0);
   width: 100%;
+  will-change: tranform;
 
   ${({ state }) => stateMap[state]};
 `;

@@ -4,7 +4,7 @@ export const animations = {
   moveToLeft: {
     keyframes: keyframes`
       from { }
-      to { transform: translateX(-100%); }
+      to { transform: translateX(-100%) rotateZ(0.01deg); }
     `,
     duration: 600,
     timing: 'ease',
@@ -12,7 +12,7 @@ export const animations = {
   },
   moveFromLeft: {
     keyframes: keyframes`
-      from {  transform: translateX(-100%) };
+      from {  transform: translateX(-100%) rotateZ(0.01deg); }
     `,
     duration: 600,
     timing: 'ease',
@@ -21,7 +21,7 @@ export const animations = {
   moveToRight: {
     keyframes: keyframes`
       from { }
-      to { transform: translateX(100%); }
+      to { transform: translateX(100%) rotateZ(0.01deg); }
     `,
     duration: 600,
     timing: 'ease',
@@ -29,7 +29,7 @@ export const animations = {
   },
   moveFromRight: {
     keyframes: keyframes`
-      from { transform: translateX(100%); }
+      from { transform: translateX(100%) rotateZ(0.01deg); }
     `,
     duration: 600,
     timing: 'ease',
@@ -38,7 +38,7 @@ export const animations = {
   moveToTop: {
     keyframes: keyframes`
       from { }
-      to { transform: translateY(-100%); }
+      to { transform: translateY(-100%) rotateZ(0.01deg); }
     `,
     duration: 600,
     timing: 'ease',
@@ -46,7 +46,7 @@ export const animations = {
   },
   moveFromTop: {
     keyframes: keyframes`
-      from { transform: translateY(-100%); }
+      from { transform: translateY(-100%) rotateZ(0.01deg); }
     `,
     duration: 600,
     timing: 'ease',
@@ -55,7 +55,7 @@ export const animations = {
   moveToBottom: {
     keyframes: keyframes`
       from { }
-      to { transform: translateY(100%); }
+      to { transform: translateY(100%) rotateZ(0.01deg); }
     `,
     duration: 600,
     timing: 'ease',
@@ -63,7 +63,7 @@ export const animations = {
   },
   moveFromBottom: {
     keyframes: keyframes`
-      from { transform: translateY(100%); }
+      from { transform: translateY(100%) rotateZ(0.01deg); }
     `,
     duration: 600,
     timing: 'ease',
@@ -81,7 +81,7 @@ export const animations = {
   moveToLeftFade: {
     keyframes: keyframes`
       from { }
-      to { opacity: 0.3; transform: translateX(-100%); }
+      to { opacity: 0.3; transform: translateX(-100%) rotateZ(0.01deg); }
     `,
     duration: 700,
     timing: 'ease',
@@ -89,7 +89,7 @@ export const animations = {
   },
   moveFromLeftFade: {
     keyframes: keyframes`
-      from { opacity: 0.3;  transform: translateX(-100%); }
+      from { opacity: 0.3;  transform: translateX(-100%) rotateZ(0.01deg); }
     `,
     duration: 700,
     timing: 'ease',
@@ -98,7 +98,7 @@ export const animations = {
   moveToRightFade: {
     keyframes: keyframes`
       from { }
-      to { opacity: 0.3;  transform: translateX(100%); }
+      to { opacity: 0.3;  transform: translateX(100%) rotateZ(0.01deg); }
     `,
     duration: 700,
     timing: 'ease',
@@ -106,7 +106,7 @@ export const animations = {
   },
   moveFromRightFade: {
     keyframes: keyframes`
-      from { opacity: 0.3; transform: translateX(100%); }
+      from { opacity: 0.3; transform: translateX(100%) rotateZ(0.01deg); }
     `,
     duration: 700,
     timing: 'ease',
@@ -115,7 +115,7 @@ export const animations = {
   moveToTopFade: {
     keyframes: keyframes`
       from { }
-      to { opacity: 0.3; transform: translateY(-100%); }
+      to { opacity: 0.3; transform: translateY(-100%) rotateZ(0.01deg); }
     `,
     duration: 600,
     timing: 'ease',
@@ -123,7 +123,7 @@ export const animations = {
   },
   moveFromTopFade: {
     keyframes: keyframes`
-      from { opacity: 0.3; transform: translateY(-100%); }
+      from { opacity: 0.3; transform: translateY(-100%) rotateZ(0.01deg); }
     `,
     duration: 700,
     timing: 'ease',
@@ -132,7 +132,7 @@ export const animations = {
   moveToBottomFade: {
     keyframes: keyframes`
       from { }
-      to { opacity: 0.3;  transform: translateY(100%); }
+      to { opacity: 0.3;  transform: translateY(100%) rotateZ(0.01deg); }
     `,
     duration: 700,
     timing: 'ease',
@@ -140,7 +140,7 @@ export const animations = {
   },
   moveFromBottomFade: {
     keyframes: keyframes`
-      from { opacity: 0.3; transform: translateY(100%); }
+      from { opacity: 0.3; transform: translateY(100%) rotateZ(0.01deg); }
     `,
     duration: 700,
     timing: 'ease',
