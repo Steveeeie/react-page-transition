@@ -55,8 +55,5 @@
     "before:init": [
       "npm run lib:build"
     ]
-  },
-  "dependencies": {
-    "react-transition-group": "^4.4.1"
   }
 }
