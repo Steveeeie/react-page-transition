@@ -9,6 +9,8 @@
 
 ### [View Advanced Demo](https://codesandbox.io/s/advanced-react-page-transition-demo-z8hmd)
 
+### [View TypeScript Demo](https://codesandbox.io/s/advanced-react-page-transition-demo-typescript-nb4lzk)
+
 ---
 
 <p align="center">
