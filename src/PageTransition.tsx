@@ -2,7 +2,16 @@ import React, { memo } from 'react';
 import { Transition, TransitionGroup } from 'react-transition-group';
 import { animations } from './animations';
 import { presets } from './presets';
-import { PageTransitionGroup, PageTransitionWrapper } from './styles';
+import { PageTransitionGroup } from './PageTransitionGroup';
+import { PageTransitionWrapper } from './PageTransitionWrapper';
+
+interface Props {
+  children: React.ReactNode;
+  enterAnimation: string | { name: string; delay: Number; onTop: Boolean };
+  exitAnimation: string | { name: string; delay: Number; onTop: Boolean };
+  preset: string;
+  transitionKey: string;
+}
 
 function PageTransition({
   children,
@@ -11,7 +20,7 @@ function PageTransition({
   preset,
   transitionKey,
   ...rest
-}) {
+}: Props) {
   const selectEnterAnimation = () => {
     if (enterAnimationOverride) {
       if (typeof enterAnimationOverride === 'string') {
