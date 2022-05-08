@@ -24,7 +24,6 @@ const stateMap = {
 
 const PageTransitionWrapper = styled.div<Props>`
   backface-visibility: hidden;
-  border: 20px solid red;
   height: 100%;
   left: 0;
   overflow: hidden;
