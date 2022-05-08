@@ -1,6 +1,17 @@
-import { keyframes } from 'styled-components';
+import { keyframes, Keyframes } from 'styled-components';
+import { Property } from 'csstype';
 
-export const animations = {
+interface Animation {
+  keyframes: Keyframes;
+  duration: number;
+  timing: string;
+  fill: Property.Fill;
+  delay?: Property.AnimationDelay;
+  origin?: Property.TransformOrigin;
+  onTop?: boolean;
+}
+
+const animations = {
   moveToLeft: {
     keyframes: keyframes`
       from { }
@@ -778,3 +789,5 @@ export const animations = {
     fill: 'both'
   }
 };
+
+export { animations, Animation };
