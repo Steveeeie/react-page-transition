@@ -7,8 +7,8 @@ import { PageTransitionWrapper } from './PageTransitionWrapper';
 
 interface Props {
   children: React.ReactNode;
-  enterAnimation: string | { name: string; delay: Number; onTop: Boolean };
-  exitAnimation: string | { name: string; delay: Number; onTop: Boolean };
+  enterAnimation?: string | { name: string; delay: Number; onTop: Boolean };
+  exitAnimation?: string | { name: string; delay: Number; onTop: Boolean };
   preset: string;
   transitionKey: string;
 }
