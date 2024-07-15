@@ -1,6 +1,6 @@
 <img alt="Abandoned" src="https://img.shields.io/badge/Abandoned-red"> <img alt="License" src="https://img.shields.io/npm/l/@steveeeie/react-page-transition" />
 
-**IMPORTANT: This project doesn't support newer versions of React or React Router and is for now considered abandoned. Please see: See: https://github.com/Steveeeie/react-page-transition/issues/33**
+**IMPORTANT: This project doesn't support newer versions of React or React Router and is for now considered abandoned. Please see: https://github.com/Steveeeie/react-page-transition/issues/33**
 
 # React Page Transition
 
