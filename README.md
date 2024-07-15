@@ -1,5 +1,6 @@
-<img alt="License" src="https://img.shields.io/npm/l/@steveeeie/react-page-transition" /> <img alt="Version" src="https://img.shields.io/npm/v/@steveeeie/react-page-transition"> <img alt="Size" src="https://img.shields.io/bundlephobia/min/@steveeeie/react-page-transition"> <img alt="PRs" src="https://img.shields.io/badge/PRs-Welcome-brightgreenn">
-<a href="https://www.twitter.com/steveeeie"><img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/steveeeie?style=social"></a>
+<img alt="Abandoned" src="https://img.shields.io/badge/Abandoned-red"> <img alt="License" src="https://img.shields.io/npm/l/@steveeeie/react-page-transition" />
+
+**IMPORTANT: This project doesn't support newer versions of React or React Router and is for now considered abandoned. Please see: See: https://github.com/Steveeeie/react-page-transition/issues/33**
 
 # React Page Transition
 
